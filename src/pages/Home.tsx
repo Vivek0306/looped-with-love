@@ -4,7 +4,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="py-5" style={{ backgroundColor: 'var(--lwl-white)' }}>
         <div className="container text-center">
-            <h1 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '142px', color: 'var(--lwl-rose)' }}>
+            <h1 className="fw-bold mb-3 hero-title">
                 Looped With Love
             </h1>
             <img
