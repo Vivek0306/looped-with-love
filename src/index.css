@@ -1,11 +1,78 @@
+:root {
+  --lwl-white: #fefdf0;
+  --lwl-cream: #fef6f0;
+  --lwl-pink: #e5b2a2;
+  --lwl-rose: #d4a59a;
+  --lwl-peach: #f4d4c8;
+  --lwl-sage: #c9d5c3;
+  --lwl-lavender: #e8dfe8;
+  --lwl-blush: #f8e8e3;
+  --lwl-dark: #5a4a42;
+  --lwl-muted: #8b7d77;
+  --lwl-btn-primary: #d4a59a;
+
+  --bs-primary: #d4a59a;
+  --bs-primary-rgb: 212, 165, 154;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Force override Bootstrap primary button */
+.btn-primary {
+  background-color: #d4a59a !important;
+  border-color: #d4a59a !important;
+  color: white !important;
+}
 
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #c49888 !important;
+  border-color: #c49888 !important;
+  color: white !important;
+}
+
+.btn-primary:active {
+  background-color: #b58a78 !important;
+  border-color: #b58a78 !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(212, 165, 154, 0.5) !important;
+}
+
+/* For large buttons */
+.btn-lg.btn-primary {
+  background-color: #d4a59a !important;
+  border-color: #d4a59a !important;
+}
+
+.btn-lg.btn-primary:hover {
+  background-color: #c49888 !important;
+  border-color: #c49888 !important;
+}
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #ffffff;
+  background-color: #fefdf0 !important; 
   color: #222;
+}
+
+
+.nav-link-custom {
+    font-family: 'Caveat', cursive !important;
+    color: var(--lwl-dark) !important;
+    font-size: 24px !important;  
+}
+
+@media (min-width: 720px) {
+    .nav-link-custom {
+        font-size: 44px !important; 
+    }
+}
+
+.navbar-brand{
+  font-family: 'Pacifico', cursive !important;
+  font-size: 34px !important;
+  color: var(--lwl-dark) !important;
 }

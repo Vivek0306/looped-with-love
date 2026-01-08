@@ -1,13 +1,12 @@
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom m-2">
+        <nav className="navbar navbar-expand-lg navbar-light border-bottom m-2" style={{ backgroundColor: 'var(--lwl-white)' }}>
             <div className="container">
                 <a href="#" className="navbar-brand fw-semi
-                bold">
+                bold" >
                     Looped With Love
                 </a>
-            </div>
-            <button 
+                <button 
                 className="navbar-toggler" 
                 type="button" 
                 data-bs-toggle="collapse"
@@ -18,17 +17,19 @@ export default function Navbar() {
             >
                 <span className="navbar-toggler-icon"></span>
             </button>
+            </div>
+            
 
             <div className="collapse navbar-collapse" id="mainNavbar">
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        <a href="#" className="nav-link active">Home</a>
+                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li className="nav-item mx-4">
+                        <a href="#" className="nav-link active nav-link-custom">Home</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Gallery</a>
+                    <li className="nav-item mx-4">
+                        <a href="#" className="nav-link nav-link-custom">Gallery</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">About</a>
+                    <li className="nav-item mx-4">
+                        <a href="#" className="nav-link nav-link-custom">About</a>
                     </li>
                 </ul>
             </div>
