@@ -142,7 +142,7 @@ const Home = () => {
               <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '54px', color: 'var(--lwl-dark)' }}>Snuggle Buddies Made to Hug</h2>
               <p className="text-muted mb-4">
                 Custom crochet bears and plush figures crafted with extra softness. 
-                <strong>Made to be squeezed, loved, and cherished</strong> — perfect cuddle companions for all ages.
+                <strong> Made to be squeezed, loved, and cherished</strong> — perfect cuddle companions for all ages.
               </p>
               <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Find Your Snuggle Buddy
