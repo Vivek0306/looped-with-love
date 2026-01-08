@@ -73,7 +73,7 @@ const Home = () => {
               />
             </div>
             <div className="col-md-6 ps-md-5">
-              <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '54px', color: 'var(--lwl-dark)' }}>Blooms That Never Fade</h2>
+              <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '34px', color: 'var(--lwl-dark)' }}>Blooms That Never Fade</h2>
               <p className="text-muted mb-4">
                 Handcrafted crochet bouquets featuring sunflowers, tulips, and lavender. 
                 Perfect for gifting your loved ones — <strong>forever flowers for your forever person.</strong>
@@ -106,7 +106,7 @@ const Home = () => {
               />
             </div>
             <div className="col-md-6 pe-md-5 order-md-1">
-              <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '54px', color: 'var(--lwl-dark)' }}>Little Treasures for Tiny Humans</h2>
+              <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '34px', color: 'var(--lwl-dark)' }}>Little Treasures for Tiny Humans</h2>
               <p className="text-muted mb-4">
                 Custom baby essentials including bibs, rattles, cuddly bears, and tiny booties. 
                 Made with baby-safe yarn — <strong>first smiles deserve handmade love.</strong>
@@ -139,7 +139,7 @@ const Home = () => {
               />
             </div>
             <div className="col-md-6 ps-md-5">
-              <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '54px', color: 'var(--lwl-dark)' }}>Snuggle Buddies Made to Hug</h2>
+              <h2 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '34px', color: 'var(--lwl-dark)' }}>Snuggle Buddies Made to Hug</h2>
               <p className="text-muted mb-4">
                 Custom crochet bears and plush figures crafted with extra softness. 
                 <strong> Made to be squeezed, loved, and cherished</strong> — perfect cuddle companions for all ages.
