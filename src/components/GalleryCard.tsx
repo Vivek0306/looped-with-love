@@ -2,17 +2,18 @@ import type { GalleryItem } from "../data/galleryItems";
 
 interface Props {
   item: GalleryItem;
+  isSide?: boolean;
 }
 
-const GalleryCard = ({ item }: Props) => {
+const GalleryCard = ({ item, isSide }: Props) => {
   return (
-    <div className="col-12 col-md-4">
+    <div className={`${isSide ? "col-6 col-md-4" : "col-12 col-md-4"}`}>
       <div className="gallery-item">
         <h5 className="gallery-title">{item.title}</h5> 
         <img
           src={item.image}
           alt={item.title}
-          className="gallery-image"
+          className={`${isSide ? "gallery-image" : "gallery-image-full"}`}
         />
       </div>
     </div>

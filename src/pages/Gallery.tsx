@@ -1,5 +1,5 @@
 import GalleryCard from "../components/GalleryCard";
-import { BouqetItems } from "../data/galleryItems";
+import { BouqetItems, BookmarksItems, PotItems, BabyItems } from "../data/galleryItems";
 
 const Gallery = () => {
   return (
@@ -23,7 +23,7 @@ const Gallery = () => {
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
                 <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
-                  Flower<br />Bouquets
+                  Flower<br className="d-none d-md-block"/> Bouquets
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
                   Blooms that last forever
@@ -34,7 +34,33 @@ const Gallery = () => {
             <div className="col-12 col-lg-9">
               <div className="row g-3 g-md-4">
                 {BouqetItems.map((item) => (
-                  <GalleryCard key={item.id} item={item} />
+                  <GalleryCard key={item.id} item={item} isSide={true} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Bookmarks Section */}
+      <section className="py-5" >
+        <div className="container">
+          <div className="row">            
+            <div className="col-12 col-lg-3 mb-4 mb-lg-0">
+              <div className="sticky-top" style={{ top: '100px' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                  Bookmarks
+                </h2>
+                <p className="text-muted" style={{ fontSize: '14px' }}>
+                  Never Lose Your Page Again
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-9">
+              <div className="row g-3 g-md-4">
+                {BookmarksItems.map((item) => (
+                  <GalleryCard key={item.id} item={item} isSide={true} />
                 ))}
               </div>
             </div>
@@ -42,6 +68,60 @@ const Gallery = () => {
           </div>
         </div>
       </section>
+
+      {/* Pots Section */}
+      <section className="py-5" style={{ backgroundColor: 'var(--lwl-peach)' }}>
+        <div className="container">
+          <div className="row">            
+            <div className="col-12 col-lg-3 mb-4 mb-lg-0">
+              <div className="sticky-top" style={{ top: '100px' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                  Tabletop<br className="d-none d-md-block"/> Gardens
+                </h2>
+                <p className="text-muted" style={{ fontSize: '14px' }}>
+                  Your Forever Garden Starts Here
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-9">
+              <div className="row g-3 g-md-4">
+                {PotItems.map((item) => (
+                  <GalleryCard key={item.id} item={item} isSide={true} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Baby Section */}
+      <section className="py-5" >
+        <div className="container">
+          <div className="row">            
+            <div className="col-12 col-lg-3 mb-4 mb-lg-0">
+              <div className="sticky-top" style={{ top: '100px' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                  Baby<br className="d-none d-md-block"/>  Bliss
+                </h2>
+                <p className="text-muted" style={{ fontSize: '14px' }}>
+                  Little Treasures for Tiny Humans
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-9">
+              <div className="row g-3 g-md-4">
+                {BabyItems.map((item) => (
+                  <GalleryCard key={item.id} item={item} isSide={true} />
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };
