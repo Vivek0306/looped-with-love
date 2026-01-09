@@ -88,7 +88,7 @@ body {
 
 /* Gallery Item Styles - Minimal */
 .gallery-item {
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
 }
 
 .gallery-title {
@@ -131,6 +131,10 @@ body {
 
   .gallery-title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
+  }
+  .gallery-item {
+    margin-bottom: 18px;
+    text-transform: uppercase ;
   }
 }

@@ -19,9 +19,7 @@ const Gallery = () => {
       {/* Bouquet Section */}
       <section className="py-5" style={{ backgroundColor: 'var(--lwl-peach)' }}>
         <div className="container">
-          <div className="row">
-            
-            {/* LEFT: Section Title - Sticky */}
+          <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
                 <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
@@ -33,7 +31,6 @@ const Gallery = () => {
               </div>
             </div>
 
-            {/* RIGHT: Image Grid */}
             <div className="col-12 col-lg-9">
               <div className="row g-3 g-md-4">
                 {BouqetItems.map((item) => (
