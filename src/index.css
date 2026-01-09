@@ -66,6 +66,13 @@ body {
   font-family: 'Caveat', cursive !important;
   color: var(--lwl-dark) !important;
   font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+.active{
+  font-weight: 800 !important;
+  font-size: 34px !important;
+  text-decoration: underline dotted !important;
 }
 
 .navbar-brand {
