@@ -14,11 +14,13 @@
   --bs-primary: #d4a59a;
   --bs-primary-rgb: 212, 165, 154;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Force override Bootstrap primary button */
 .btn-primary {
   background-color: #d4a59a !important;
@@ -52,39 +54,83 @@
   background-color: #c49888 !important;
   border-color: #c49888 !important;
 }
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #fefdf0 !important; 
+  background-color: #fefdf0 !important;
   color: #222;
 }
 
 
 .nav-link-custom {
-    font-family: 'Caveat', cursive !important;
-    color: var(--lwl-dark) !important;
-    font-size: 24px !important;  
+  font-family: 'Caveat', cursive !important;
+  color: var(--lwl-dark) !important;
+  font-size: 24px !important;
 }
 
-.hero-title{
-    font-family: 'Pacifico', cursive !important;
-    color: var(--lwl-rose) !important;
-    font-size: 44px !important;  
-}
-
-@media (min-width: 720px) {
-    .nav-link-custom {
-        font-size: 44px !important; 
-    }
-    .hero-title{
-        font-size: 142px !important;  
-    }
-
-}
-
-.navbar-brand{
+.navbar-brand {
   font-family: 'Pacifico', cursive !important;
   font-size: 28px !important;
   color: var(--lwl-dark) !important;
 }
 
+.hero-title {
+  font-family: 'Pacifico', cursive !important;
+  color: var(--lwl-rose) !important;
+  font-size: 44px !important;
+}
 
+.section-title {
+  font-family: 'Pacifico', cursive !important;
+  color: var(--lwl-dark) !important;
+  font-size: 32px !important;
+}
+
+/* Gallery Item Styles - Minimal */
+.gallery-item {
+  margin-bottom: 1rem;
+}
+
+.gallery-title {
+  font-size: 18px;
+  color: var(--lwl-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.gallery-image {
+  border-radius: 16px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(212, 165, 154, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(212, 165, 154, 0.25);
+}
+
+@media (min-width: 720px) {
+  .nav-link-custom {
+    font-size: 44px !important;
+  }
+
+  .hero-title {
+    font-size: 142px !important;
+  }
+
+  .section-title {
+    font-size: 54px !important;
+  }
+
+  .gallery-image {
+    height: 300px;
+  }
+
+  .gallery-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
