@@ -57,7 +57,7 @@ export const BouqetItems: GalleryItem[] = [
     },
     {
         id: "bouqet_9",
-        title: "Cuustom Spiderman Flower Bouquet",
+        title: "Custom Flower Bouquet",
         category: "Bouqet",
         image: "bouqets/b_9.jpg"
     },

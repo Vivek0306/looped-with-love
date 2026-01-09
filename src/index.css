@@ -92,10 +92,10 @@ body {
 }
 
 .gallery-title {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--lwl-dark);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  
 }
 
 .gallery-image {
@@ -130,8 +130,8 @@ body {
   }
 
   .gallery-title {
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
   }
   .gallery-item {
     margin-bottom: 18px;

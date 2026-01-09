@@ -6,9 +6,9 @@ interface Props {
 
 const GalleryCard = ({ item }: Props) => {
   return (
-    <div className="col-6 col-md-4">
+    <div className="col-12 col-md-4">
       <div className="gallery-item">
-        <h5 className="gallery-title">{item.title}</h5>
+        <h5 className="gallery-title">{item.title}</h5> 
         <img
           src={item.image}
           alt={item.title}
