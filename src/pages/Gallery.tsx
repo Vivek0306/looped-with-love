@@ -1,5 +1,5 @@
 import GalleryCard from "../components/GalleryCard";
-import { BouqetItems, BookmarksItems, PotItems, BabyItems } from "../data/galleryItems";
+import { BouqetItems, BookmarksItems, PotItems, BabyItems, PlushiesItems, OtherItems } from "../data/galleryItems";
 
 const Gallery = () => {
   return (
@@ -122,6 +122,58 @@ const Gallery = () => {
         </div>
       </section>
 
+      {/* Plushie Section */}
+      <section className="py-5" style={{ backgroundColor: 'var(--lwl-peach)' }}>
+        <div className="container">
+          <div className="row">            
+            <div className="col-12 col-lg-3 mb-4 mb-lg-0">
+              <div className="sticky-top" style={{ top: '100px' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                  Snuggle<br className="d-none d-md-block"/> Buddies
+                </h2>
+                <p className="text-muted" style={{ fontSize: '14px' }}>
+                  Hug-ready and heart-warming
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-9">
+              <div className="row g-3 g-md-4">
+                {PlushiesItems.map((item) => (
+                  <GalleryCard key={item.id} item={item} isSide={true} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accessories Section */}
+      <section className="py-5" >
+        <div className="container">
+          <div className="row">            
+            <div className="col-12 col-lg-3 mb-4 mb-lg-0">
+              <div className="sticky-top" style={{ top: '100px' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                  Looped<br className="d-none d-md-block"/>  Accessories
+                </h2>
+                <p className="text-muted" style={{ fontSize: '14px' }}>
+                  Handcrafted touches for everyday life
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-9">
+              <div className="row g-3 g-md-4">
+                {OtherItems.map((item) => (
+                  <GalleryCard key={item.id} item={item} isSide={true} />
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
     </>
   );
 };
