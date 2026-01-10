@@ -79,7 +79,7 @@ const Home = () => {
                 Handcrafted crochet bouquets featuring sunflowers, tulips, and lavender. 
                 Perfect for gifting your loved ones — <strong>forever flowers for your forever person.</strong>
               </p>
-              <a href="/gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
+              <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Browse Bouquets
               </a>
             </div>
@@ -112,7 +112,7 @@ const Home = () => {
                 Custom baby essentials including bibs, rattles, cuddly bears, and tiny booties. 
                 Made with baby-safe yarn — <strong>first smiles deserve handmade love.</strong>
               </p>
-              <a href="/gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
+              <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Shop Baby Collection
               </a>
             </div>
@@ -145,7 +145,7 @@ const Home = () => {
                 Custom crochet bears and plush figures crafted with extra softness. 
                 <strong> Made to be squeezed, loved, and cherished</strong> — perfect cuddle companions for all ages.
               </p>
-              <a href="/gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
+              <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Find Your Snuggle Buddy
               </a>
             </div>

@@ -47,7 +47,7 @@ const Gallery = () => {
           <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
-                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}id="bouquet">
                   Flower<br className="d-none d-md-block"/> Bouquets
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
@@ -126,7 +126,7 @@ const Gallery = () => {
           <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
-                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }} id="baby">
                   Baby<br className="d-none d-md-block"/>  Bliss
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
@@ -153,7 +153,7 @@ const Gallery = () => {
           <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
-                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }} id="snuggle">
                   Snuggle<br className="d-none d-md-block"/> Buddies
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
