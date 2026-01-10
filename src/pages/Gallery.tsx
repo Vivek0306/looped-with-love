@@ -1,7 +1,19 @@
 import GalleryCard from "../components/GalleryCard";
 import { BouqetItems, BookmarksItems, PotItems, BabyItems, PlushiesItems, OtherItems } from "../data/galleryItems";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Gallery = () => {
+  const location = useLocation();
+    useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       {/* Page Title */}
@@ -22,7 +34,7 @@ const Gallery = () => {
           <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
-                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                <h2 id="bouquet" className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
                   Flower<br className="d-none d-md-block"/> Bouquets
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
@@ -101,7 +113,7 @@ const Gallery = () => {
           <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
-                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                <h2 id="baby" className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
                   Baby<br className="d-none d-md-block"/>  Bliss
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
@@ -128,7 +140,7 @@ const Gallery = () => {
           <div className="row">            
             <div className="col-12 col-lg-3 mb-4 mb-lg-0">
               <div className="sticky-top" style={{ top: '100px' }}>
-                <h2 className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
+                <h2 id="snuggle" className="fw-bold" style={{ fontFamily: 'Caveat, cursive', fontSize: '48px', color: 'var(--lwl-dark)' }}>
                   Snuggle<br className="d-none d-md-block"/> Buddies
                 </h2>
                 <p className="text-muted" style={{ fontSize: '14px' }}>
