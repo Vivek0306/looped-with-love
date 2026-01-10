@@ -118,8 +118,8 @@ body {
   border-radius: 16px;
   display: flex;
   width: 100%;
-  height: 260px;
-  object-fit: fll;
+  height: 250px;
+  object-fit: cover;
   box-shadow: 0 4px 12px rgba(212, 165, 154, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
