@@ -1,7 +1,7 @@
 import { useEffect, useState} from 'react';
 import type { GalleryItem } from '../data/galleryItems';
 
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs} from "firebase/firestore";
 import { db } from "../firebase";
 
 export const useGalleryItems = () => {
@@ -15,6 +15,7 @@ export const useGalleryItems = () => {
                 id: doc.id,
                 ...(doc.data() as Omit<GalleryItem, "id">),
             }));
+            console.log("Fetched items:", data);
             setItems(data);
             setLoading(false);
         }
@@ -23,3 +24,4 @@ export const useGalleryItems = () => {
 
     return { items, loading };
 }
+

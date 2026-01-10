@@ -1,0 +1,93 @@
+/* Manage Table Styles */
+.manage-table-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(212, 165, 154, 0.1);
+  overflow: hidden;
+}
+
+.manage-table {
+  margin-bottom: 0;
+  background-color: white;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.manage-table thead {
+  background-color: var(--lwl-rose);
+  color: white;
+}
+
+.manage-table thead th {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+  white-space: nowrap;
+}
+
+.manage-table tbody tr {
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid var(--lwl-peach);
+}
+
+.manage-table tbody tr:hover {
+  background-color: var(--lwl-blush);
+}
+
+.manage-table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+  color: var(--lwl-dark);
+  font-size: 14px;
+}
+
+.manage-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--lwl-rose);
+}
+
+/* Filter buttons */
+.btn-group .btn {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.btn-group .btn:last-child {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--lwl-blush) !important;
+  border-color: var(--lwl-rose) !important;
+  color: var(--lwl-dark) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .manage-table thead th {
+    font-size: 18px;
+    padding: 0.75rem;
+  }
+  
+  .manage-table tbody td {
+    font-size: 12px;
+    padding: 0.75rem;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-group .btn {
+    border-radius: 0.375rem !important;
+    margin-bottom: 0.25rem;
+  }
+}
