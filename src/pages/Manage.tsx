@@ -1,7 +1,6 @@
 import GalleryItems from "../data/galleryItems";
-
 import DataRow from "../components/DataRow";
-console.log(Object.keys(GalleryItems[0]));
+
 export default function Manage() {
     return (
         <>
