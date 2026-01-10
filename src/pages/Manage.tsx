@@ -22,7 +22,7 @@ export default function Manage() {
                             </tr>
                         </thead>
                         <tbody>
-                            {GalleryItems.map((item, index) => (
+                            {GalleryItems.map((item) => (
                                 <DataRow item={item} />
                             ))}
                             
