@@ -6,7 +6,7 @@ export interface GalleryItem{
     link: string;  
 }
 
-export const BabyItems: GalleryItem[] = [
+export var BabyItems: GalleryItem[] = [
     {
         id: "baby_1",
         title: "Baby Dress",
@@ -30,7 +30,7 @@ export const BabyItems: GalleryItem[] = [
     }
 ]
 
-export const BookmarksItems: GalleryItem[] = [
+export var BookmarksItems: GalleryItem[] = [
     {
         id: "bookmarks_1",
         title: "Star Bookmark",
@@ -54,7 +54,7 @@ export const BookmarksItems: GalleryItem[] = [
     },
 ]
 
-export const PotItems: GalleryItem[] = [
+export var PotItems: GalleryItem[] = [
     {
         id: "pots_1",
         title: "Orchid Pot",
@@ -99,7 +99,7 @@ export const PotItems: GalleryItem[] = [
     },
 ]
 
-export const BouqetItems: GalleryItem[] = [
+export var BouqetItems: GalleryItem[] = [
     {
         id: "bouqet_1",
         title: "Tulip Bouquet",
@@ -158,7 +158,7 @@ export const BouqetItems: GalleryItem[] = [
     },
 ]
 
-export const PlushiesItems: GalleryItem[] = [
+export var PlushiesItems: GalleryItem[] = [
     {
         id: "plushies_1",
         title: "Teddy Bear",
@@ -197,7 +197,7 @@ export const PlushiesItems: GalleryItem[] = [
 
 ]
 
-export const OtherItems: GalleryItem[] = [
+export var OtherItems: GalleryItem[] = [
     {
         id: "other_1",
         title: "Car Decor",
@@ -219,3 +219,15 @@ export const OtherItems: GalleryItem[] = [
         link: "https://www.instagram.com/_looped_with_love_/p/DIqCWYyTwrz/" 
     }
 ]
+
+
+var GalleryItems: GalleryItem[] = [
+    ...BouqetItems,
+    ...PotItems,
+    ...BookmarksItems,
+    ...BabyItems,
+    ...PlushiesItems,
+    ...OtherItems
+];
+
+export default GalleryItems;

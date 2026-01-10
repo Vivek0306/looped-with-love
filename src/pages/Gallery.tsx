@@ -1,7 +1,32 @@
 import GalleryCard from "../components/GalleryCard";
-import { BouqetItems, BookmarksItems, PotItems, BabyItems, PlushiesItems, OtherItems } from "../data/galleryItems";
+// import { BouqetItems, BookmarksItems, PotItems, BabyItems, PlushiesItems, OtherItems } from "../data/galleryItems";
+import { useGalleryItems } from "../hooks/useGalleryItems";
 
 const Gallery = () => {
+  const {items, loading} = useGalleryItems();
+
+  if (loading) {
+    return (
+    <section className="py-5" style={{ backgroundColor: 'var(--lwl-white)' }}>
+        <div className="container text-center">
+          <h1 className="fw-bold mb-3" style={{ fontFamily: 'Pacifico, cursive', fontSize: '64px', color: 'var(--lwl-rose)' }}>
+            Loading...
+          </h1>
+          <p className="text-muted mx-auto" style={{ maxWidth: "600px" }}>
+            Please wait while we load our collection of handcrafted crochet creations
+          </p>
+        </div>
+    </section>
+    );
+  }
+
+  const BouqetItems = items.filter((item) => item.category === "Bouqet");
+  const BookmarksItems = items.filter((item) => item.category === "Bookmarks");
+  const PotItems = items.filter((item) => item.category === "Pots");
+  const BabyItems = items.filter((item) => item.category === "Baby");
+  const PlushiesItems = items.filter((item) => item.category === "Plushies");
+  const OtherItems = items.filter((item) => item.category === "Others");
+
   return (
     <>
       {/* Page Title */}
