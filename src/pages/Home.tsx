@@ -1,3 +1,4 @@
+
 const Home = () => {
   return (
     <>
@@ -29,7 +30,7 @@ const Home = () => {
         <div className="container">
           <div className="row text-center">
             <div className="col-md-4 mb-4">
-              <h5 className="fw-semibold" style={{ fontFamily: 'Caveat, cursive', fontSize: '44px', color: 'var(--lwl-dark)' }}>Handmade Magic</h5>
+              <h5 className="fw-semibold d-flex justify-content-center align-items-center gap-3" style={{ fontFamily: 'Caveat, cursive', fontSize: '44px', color: 'var(--lwl-dark)' }}>Handmade Magic</h5>
               <p className="text-muted small">
                 Every piece is carefully crocheted by hand with attention to
                 detail.
@@ -37,14 +38,14 @@ const Home = () => {
             </div>
 
             <div className="col-md-4 mb-4">
-              <h5 className="fw-semibold" style={{ fontFamily: 'Caveat, cursive', fontSize: '44px', color: 'var(--lwl-dark)' }}>Made with Love</h5>
+              <h5 className="fw-semibold  d-flex justify-content-center align-items-center gap-3" style={{ fontFamily: 'Caveat, cursive', fontSize: '44px', color: 'var(--lwl-dark)' }}>Made with Love</h5>
               <p className="text-muted small">
                 Crafted slowly and mindfully, not mass-produced.
               </p>
             </div>
 
             <div className="col-md-4 mb-4">
-              <h5 className="fw-semibold" style={{ fontFamily: 'Caveat, cursive', fontSize: '44px', color: 'var(--lwl-dark)' }}>Custom Orders</h5>
+              <h5 className="fw-semibold  d-flex justify-content-center align-items-center gap-3" style={{ fontFamily: 'Caveat, cursive', fontSize: '44px', color: 'var(--lwl-dark)' }}>Custom Orders</h5>
               <p className="text-muted small">
                 Personalised colours and designs available on request.
               </p>
@@ -78,7 +79,7 @@ const Home = () => {
                 Handcrafted crochet bouquets featuring sunflowers, tulips, and lavender. 
                 Perfect for gifting your loved ones — <strong>forever flowers for your forever person.</strong>
               </p>
-              <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
+              <a href="/gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Browse Bouquets
               </a>
             </div>
@@ -111,7 +112,7 @@ const Home = () => {
                 Custom baby essentials including bibs, rattles, cuddly bears, and tiny booties. 
                 Made with baby-safe yarn — <strong>first smiles deserve handmade love.</strong>
               </p>
-              <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
+              <a href="/gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Shop Baby Collection
               </a>
             </div>
@@ -144,7 +145,7 @@ const Home = () => {
                 Custom crochet bears and plush figures crafted with extra softness. 
                 <strong> Made to be squeezed, loved, and cherished</strong> — perfect cuddle companions for all ages.
               </p>
-              <a href="#gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
+              <a href="/gallery" className="btn btn-primary" style={{ fontFamily: 'Caveat, cursive', fontSize: '24px', color: 'var(--lwl-dark)' }}>
                 Find Your Snuggle Buddy
               </a>
             </div>

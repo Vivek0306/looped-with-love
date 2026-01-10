@@ -1,3 +1,5 @@
+import { Heart } from "lucide-react";
+
 const Footer = () => {
   return (
     <>
@@ -28,7 +30,7 @@ const Footer = () => {
             </p>
         </a>
         <p className="mb-0 text-muted small">
-          <span>Made with love, one stitch at a time</span>
+          <span>Made with <a href="https://in.linkedin.com/in/vivek-nair03" className="text-decoration-none">❤️</a>, one stitch at a time</span>
         </p>
       </div>
     </footer>
